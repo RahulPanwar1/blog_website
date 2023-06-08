@@ -1,0 +1,14 @@
+
+<%- include('partials/header'); %>.
+<h1>Home</h1>
+<p><%= hcontent%></p>
+
+<%for(var i =0;i<pcontent.length;i++) { %>
+    <h1><%=pcontent[i].titlec %></h1>
+    <p><%=pcontent[i].postc.substring(0, 100) + "....." %>
+        <a href="/posts/<%=pcontent[i].titlec %>">Read More</a>
+    </p>
+<%} %>
+
+
+<%- include('partials/footer'); %>.
